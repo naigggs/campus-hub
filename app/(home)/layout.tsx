@@ -10,8 +10,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Konstrakt",
-  description: "Freelance Web-app",
+  title: "Campus Hub",
+  description: "Student Marketplace",
 };
 
 export default async function DashboardLayout({
