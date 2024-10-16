@@ -12,6 +12,7 @@ import { createClient } from "@/utils/supabase/server";
 import { ShoppingCart, ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import PaypalButton from "@/components/paypalbutton";
 
 export default async function SimpleDetailedView({
   params,
@@ -56,10 +57,7 @@ export default async function SimpleDetailedView({
               ${data && data[0]?.price}
             </span>
             <div className="flex items-center space-x-2">
-              <Button>
-                <ShoppingCart className="mr-2 h-4 w-4" />
-                Buy Now
-              </Button>
+              <PaypalButton title={data && data[0]?.title} price={data && data[0]?.price}/>
             </div>
           </div>
         </CardContent>

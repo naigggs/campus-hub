@@ -42,6 +42,8 @@ const orderHistory = [
   },
 ]
 
+
+console.log(process.env.PAYPAL_CLIENT_ID)
 export default function OrderHistory() {
   return (
     <div className="container mx-auto px-4 py-8">
